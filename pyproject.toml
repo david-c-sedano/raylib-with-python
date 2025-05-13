@@ -1,0 +1,13 @@
+[build-system]
+requires = ["scikit-build-core", "pybind11"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "rl-w-py"
+description = "Raylib bindings for Python, for the Gods.."
+version = "0.1.0"
+
+[tool.scikit-build]
+build-dir = "build"
+wheel.packages = ["src/raylib"]
+cmake.verbose = true
